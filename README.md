@@ -13,7 +13,7 @@ Second column specifies the address of the person.
 
 stopWords.txt:
 This file contains the stop words based on the current database. Stop words are words which are filtered out before or after processing of natural language data (text). 
-As the jaccard index is based on the number of matching words in two sets, these words will give us inaccurate results, hence must be removed before processing.
+As the jaccard index is based on the number of matching words in two sets, the presence of these words will give us inaccurate results, hence must be removed before processing.
 You will have to modify this file and add the stop words based on your database.
 
 jaccardIndex.py:
