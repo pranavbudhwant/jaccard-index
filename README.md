@@ -16,5 +16,8 @@ This file contains the stop words based on the current database. Stop words are 
 As the jaccard index is based on the number of matching words in two sets, the presence of these words will give us inaccurate results, hence must be removed before processing.
 You will have to modify this file and add the stop words based on your database.
 
+cleanString.py:
+Python script file containg clean() function, which removes all the stopwords, any redundant characters from a given string.
+
 jaccardIndex.py:
 Python script file, accepts the address from the user and calculates the jaccard index for every record in the data.csv file, and sorts the results based on the similarity index and displays the best matched Name-Address tuples.
