@@ -17,11 +17,11 @@ with open('data.csv') as dataFile:
 	data = csv.reader(dataFile)
 
 	address = cleanString.clean(address)
-	x = re.split('; |, | |- |,|;|-|\.',address) #Create a list of words from the string, separated by any special character.
+	x = re.split(' ',address) #Create a list of words from the string, separated by a space.
 	for row in data:
 		adr = row[1]
 		adr = cleanString.clean(adr)
-		y = re.split('; |, | |- |,|;|-|\.',adr) #Create a list of words from the string, separated by any special character.
+		y = re.split(' ',adr) #Create a list of words from the string, separated by a space.
 
 		si = jaccardIndex(x,y)
 		sortedMatches.append((row[0],row[1],si))
