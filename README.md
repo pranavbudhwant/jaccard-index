@@ -1,4 +1,4 @@
-# jaccard-index
+# Computing similarity of strings based on jaccard index
 Python script to measure the similarity of given address with the addresses in the database based on the jaccard index.
 The the script gives best matched addresses in the database to the given address by the user.
 
